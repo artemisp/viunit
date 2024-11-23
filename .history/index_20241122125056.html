@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Visual Unit Tests for More Robust Visual Programming">
+  <meta name="keywords" content="Viunit, Visual Unit Tests, Visual Programming">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visual Unit Tests for More Robust Visual Programming</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div> -->
+  <!-- <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="dummy.com">
+          Dummy
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+  <!-- </div> -->
+<!-- </nav> -->
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><img src="static/images/viunit_logo.png" alt="viunit logo" width="300">: Visual Unit Tests for More Robust Visual Programming</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://artemisp.github.io">Artemis Panagopoulou</a><sup>2,*</sup>,</span>
+            <span class="author-block">
+              <a href="https://sites.google.com/view/hongluzhou/">Honglu Zhou</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.salesforce.com/blog/author/silvio-savarese/">Silvio Savarese</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://cmxiong.com">Caiming Xiong</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.cis.upenn.edu/~ccb/">Chris Callison-Burch</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.cis.upenn.edu/~myatskar/">Mark Yatskar</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.niebles.net">Juan Carlos Niebles</a><sup>1</sup>
+            </span>
+          </div>
+
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Salesforce AI Research,</span>
+            <span class="author-block"><sup>2</sup>University of Pennsylvania</span><br
+            <span class="author-block"><sup>*</sup>Work done during internship at Salesforce AI Research</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/google/nerfies"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link.
+              <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video> -->
+      <h2 class="subtitle has-text-centered">
+        <img src="static/images/viunit_logo.png" alt="viunit_logo" width="100"> automatically generates unit tests for visual programs.
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-ut1">
+          <!-- <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/chair-tp.mp4"
+                    type="video/mp4">
+          </video> -->
+          <img src="static/images/ut1.png" alt="ut1.png" width="100%">
+        </div>
+        <div class="item item-ut2">
+          <img src="static/images/ut2.png" alt="ut2.png" width="100%">
+          
+        </div>
+        <div class="item item-ut3">
+          <img src="static/images/ut3.png" alt="ut3.png" width="100%">
+        </div>
+        <div class="item item-ut4">
+          <img src="static/images/ut4.png" alt="ut4.png" width="100%">
+        </div>
+        <div class="item item-ut5">
+          <img src="static/images/ut5.png" alt="ut5.png" width="100%">
+        </div>
+        <div class="item item-ut6">
+          <img src="static/images/ut6.png" alt="ut6.png" width="100%">
+        </div>
+        <div class="item item-ut7">
+          <img src="static/images/ut7.png" alt="ut7.png" width="100%">
+        </div>
+        <div class="item item-ut8">
+          <img src="static/images/ut8.png" alt="ut8.png" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Programming based approaches to reasoning tasks have substantially expanded the types of questions models can answer about visual scenes.
+          Yet on benchmark visual reasoning data, when models answer correctly, they produce incorrect programs 33% of the time.
+          These models are often right for the wrong reasons and risk unexpected failures on new data.
+          Unit tests play a foundational role in ensuring code correctness and could be used to repair such failures.
+          </p>
+          <p>
+          We propose Visual Unit Testing (<img src="static/images/viunit_logo.png" alt="viunit logo" width="80">), a framework to improve the reliability of visual programs by automatically generating unit tests.
+          In our framework, a unit test is represented as a novel image and answer pair meant to verify the logical correctness of a program produced for a given query.
+          Our method leverages a language model to create unit tests in the form of image descriptions and expected answers and image synthesis to produce corresponding images.
+          </p>
+          <p>
+          We conduct a comprehensive analysis of what constitutes an effective visual unit test suite, exploring unit test generation, sampling strategies, image generation methods, and varying the number of programs and unit tests. 
+          Additionally, we introduce four applications of visual unit tests: best program selection, answer refusal, re-prompting, and unsupervised reward formulations for reinforcement learning. 
+          Experiments with two models across three datasets in visual question answering and image-text matching demonstrate that <img src="static/images/viunit_logo.png" alt="viunit logo" width="80"> improves model performance by 11.4%.
+          Notably, it enables 7B open-source models to outperform gpt-4o-mini by an average of 7.7% and reduces the occurrence of programs that are correct for the wrong reasons by 40%.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Framework Overview</h2>
+        <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+          <source src="./static/images/overview.mp4"
+                  type="video/mp4">
+        </video>
+        <!-- <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div> -->
+        <!-- <img src="static/images/ViUnit Demo.png" alt="overview" width="800"> -->
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Animation. -->
+    <!-- <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Animation</h2> -->
+
+        <!-- Interpolating. -->
+        <!-- <h3 class="title is-4">Interpolating states</h3>
+        <div class="content has-text-justified">
+          <p>
+            We can also animate the scene by interpolating the deformation latent codes of two input
+            frames. Use the slider here to linearly interpolate between the left frame and the right
+            frame.
+          </p>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/interpolate_start.jpg"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+            <p>Start Frame</p>
+          </div>
+          <div class="column interpolation-video-column">
+            <div id="interpolation-image-wrapper">
+              Loading...
+            </div>
+            <input class="slider is-fullwidth is-large is-info"
+                   id="interpolation-slider"
+                   step="1" min="0" max="100" value="0" type="range">
+          </div>
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/interpolate_end.jpg"
+                 class="interpolation-image"
+                 alt="Interpolation end reference image."/>
+            <p class="is-bold">End Frame</p>
+          </div>
+        </div>
+        <br/> -->
+        <!--/ Interpolating. -->
+
+        <!-- Re-rendering. -->
+        <h3 class="title is-4">Use-Cases of Visual Unit Tests</h3>
+        <div class="content has-text-justified">
+          <p>
+            <img src="static/images/viunit_logo.png" alt="viunit logo" width="80"> can be used in a variety of applications to improve the robustness of visual programming. 
+          </p>
+          <p>
+            Here are some examples that we explore in the paper and show to outperform existing methods:
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/applications.png"
+               alt="ViUniT Applications"/>
+          <!-- <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="75%">
+            <source src="./static/videos/replay.mp4"
+                    type="video/mp4">
+          </video> -->
+        </div><br>
+      </div>
+
+      <!-- Visual Effects. -->
+      <div class="columns is-vcentered">
+        <!-- First Column -->
+        <div class="column is-half has-text-centered">
+          <div class="content">
+            <h2>Best Program Selection</h2>
+            <p>
+              <img src="static/images/viunit_logo.png" alt="viunit logo" width="80">  can be used to select the best program from a set of candidates, allowing even 7B models to surpass in performance gpt-4o-mini by an average of 7.7%.
+            </p>
+            <img src="static/images/best_program_selection.png" alt="Best Program Selection" width="100%">
+          </div>
+        </div>
+        
+        <!-- Second Column -->
+        <div class="column is-half has-text-centered">
+          <div class="content">
+            <h2>Answer Refusal</h2>
+            <p>
+              Answer refusal under uncertainty is a long standing challenge in AI.  <img src="static/images/viunit_logo.png" alt="viunit logo" width="80"> can be used to refuse answering if the code fall below a unit test score threshold, correctly suppressing answering with an F1 score of 0.8 (F1 Refusal) with as low as 2% of programs that pass the tests responding wrong (Pass Failure Rate).
+            </p>
+            <img src="static/images/answer_refusal.png" alt="Answer Refusal" width="80%">
+          </div>
+        </div><br>
+
+        <!-- First Column  (Bottom)-->
+        <div class="column is-half has-text-centered">
+          <div class="content">
+            <h2>Re-prompting</h2>
+            <p>
+              <img src="static/images/viunit_logo.png" alt="viunit logo" width="80"> can be used to re-prompt the model with a new question if the program fails to pass the unit tests instead of refusing to answer.
+            </p>
+            <img src="static/images/reprompting.png" alt="Reprompting" width="100%">
+          </div>
+        </div>
+        
+        <!-- Second Column (Bottom)-->
+        <div class="column is-half has-text-centered">
+          <div class="content">
+            <h2>Answer Refusal</h2>
+            <p>
+              Answer refusal under uncertainty is a long standing challenge in AI.  <img src="static/images/viunit_logo.png" alt="viunit logo" width="80"> can be used to refuse answering if the code fall below a unit test score threshold, correctly suppressing answering with an F1 score of 0.8 (F1 Refusal) with as low as 2% of programs that pass the tests responding wrong (Pass Failure Rate).
+            </p>
+            <img src="static/images/answer_refusal.png" alt="Answer Refusal" width="80%">
+          </div>
+        </div>
+      </div>
+    <!--/ Matting. -->
+    </section>
+    <!--/ Animation. -->
+
+
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Acknowledgements</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            Our work builds from previous work
+          </p>
+          <p>
+            <a href="https://viper.cs.columbia.edu">ViperGPT: Visual Inference via Python Execution for Reasoning</a> and <a href="https://prior.allenai.org/projects/visprog">Visual Programming for Compositional Visual Reasoning</a> set up the framework for visual programming.
+          </p>
+          <p>
+            <a href="https://zaidkhan.me/ViReP/">Self-Training Large Language Models for Improved Visual Program Synthesis With Visual Reinforcement</a> applies reinforcement learning on visual program synthesis.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{panagopoulou2024viunit,
+  author    = {Panagopoulou, Artemis, Honglu Zhou, Silvio Savarese, Caiming Xiong, Chris Callison-Burch, Mark Yatskar, Juan Carlos Niebles},
+  title     = {ViUniT: Visual Unit Tests for More Robust Visual Programming},
+  journal   = {ArXiV},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href=".">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/artemisp" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+           This webpage is adapted from  <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
